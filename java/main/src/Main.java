@@ -22,5 +22,7 @@ public class Main {
         principal.prepareForExam();
         principal.takeExam();
         System.out.println(principal.getExamResult());
+
+        System.out.println(teacher1.getYearsOfExperience());
     }
 }
