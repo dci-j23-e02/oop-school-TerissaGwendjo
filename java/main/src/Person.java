@@ -44,10 +44,18 @@ public abstract class Person {
     }
 }
 
-interface Exam {
-    void prepareForExam();
+interface Exam { // The Exam interface is defined to ensure that any class implementing it will have the following three methods:
+    void prepareForExam(); // It doesn't return anything (void), indicating that it performs some action but doesn't provide any result.
 
     void takeExam();
 
     String getExamResult();
 }
+
+/*
+* The purpose of this interface is to establish a common contract for classes that involve exams, ensuring that
+* any class implementing the Exam interface must provide concrete implementations for these three methods.
+* Classes like Student and Principal in the example implement this interface, and they must provide the specific
+* behavior for preparing for an exam, taking an exam, and getting the exam result.
+
+By using interfaces, you create a standardized way for different classes to express similar behaviors without enforcing a specific implementation. It promotes code flexibility and allows different classes to have their own unique implementations while adhering to a common set of methods defined by the interface.*/
