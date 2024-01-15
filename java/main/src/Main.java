@@ -12,16 +12,30 @@ public class Main {
 
         school.addStudent(student1);
         school.addStudent(student2);
+        System.out.println("-----------------------------------------------");
 
         school.addTeacher(teacher1);
         school.addTeacher(teacher2);
+        System.out.println("-----------------------------------------------");
 
         school.printStudents();
+        System.out.println("-----------------------------------------------");
         school.printTeachers();
+        System.out.println("-----------------------------------------------");
+
+        student1.prepareForExam();
+        student1.takeExam();
+        System.out.println(student1.getExamResult());
+
+        student2.prepareForExam();
+        student2.takeExam();
+        System.out.println(student2.getExamResult());
+        System.out.println("-----------------------------------------------");
 
         principal.prepareForExam();
         principal.takeExam();
         System.out.println(principal.getExamResult());
+        System.out.println("-----------------------------------------------");
 
         System.out.println(teacher1.getYearsOfExperience());
     }
