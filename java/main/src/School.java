@@ -5,6 +5,23 @@ public class School {
     private List<Student> students;
     private List<Teacher> teachers;
 
+    public List<Student> getStudents() {
+        return students;
+    }
+
+
+
+    public void setStudents(List<Student> students) {
+        this.students = students;
+    }
+    public List<Teacher> getTeachers() {
+        return teachers;
+    }
+
+    public void setTeachers(List<Teacher> teachers) {
+        this.teachers = teachers;
+    }
+
     public School() {
         this.students = new ArrayList<>();
         this.teachers = new ArrayList<>();
@@ -38,5 +55,9 @@ public class School {
         for (Teacher teacher : teachers) {
             System.out.println(teacher);
         }
+    }
+
+    public Principal getPrincipal() {
+        return null;
     }
 }
